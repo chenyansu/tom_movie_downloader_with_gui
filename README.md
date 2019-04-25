@@ -6,7 +6,7 @@
 
 注意：
 （1）目前只在windows上测试通过，依赖弹出cmd窗口。如果想用linux，请更改run on cmd 函数，使其弹出shell窗口即可。
-（2）依赖python的requests模块，没有的请pip安装
+（2）依赖python的requests和pyqt5模块，没有的请pip安装
 
 
 ![程序截图](https://github.com/chenyansu/tom_movie_downloader_with_gui/blob/master/%E7%A8%8B%E5%BA%8F%E6%88%AA%E5%9B%BE.png)
