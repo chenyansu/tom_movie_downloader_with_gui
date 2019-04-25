@@ -80,6 +80,17 @@ class Run():
         self.ui.warning_label.setText("")
         self.ui.warning_label.setStyleSheet("background-color:transparent;")
         self.ui.finish_num_lineEdit.setStyleSheet("background-color:rgb(255,255,255);")
+        # 恢复状态
+        self.back()
+
+    def back(self):
+        """ 清除除了下拉列表外的数据"""
+        self.ui.url_lineEdit.setText("")
+        self.ui.quick_insert_lineEdit.setText("")
+        self.ui.base_url_lineEdit.setText("")
+        self.ui.amount_lineEdit.setText("1")
+        self.ui.finish_num_lineEdit.setText("-1")
+        self.ui.name_lineEdit.setText("")
 
 
     def run_on_cmd(self, base_url, out, amount, finish, postfix):
@@ -166,6 +177,7 @@ class Run():
     def clear_display_pushButton_func(self):
         """ 清除显示窗口"""
         self.ui.display_textBrowser.clear()
+        self.back()
 
     ####################
     #输入检验函数#
